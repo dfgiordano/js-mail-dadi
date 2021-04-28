@@ -11,13 +11,14 @@ console.log(emailRegistrate);
 
 // var check = emailRegistrate.indexOf(mail);
 // console.log(check);
-for ( var i = 0; i < emailRegistrate.length; i++) {    
-    if (i === emailRegistrate) {
-        document.getElementById("ricerca").innerHTML = "Complimenti la tua email si trova tra quelle gi&agrave; registrate &excl;";
-        console.log(emailRegistrate[i]);
+for (var i = 0; i < emailRegistrate.length; i++) {    
+    if (mail == emailRegistrate[i]) {
     }
-    else (i != emailRegistrate) {
-        (document.getElementById("ricerca").innerHTML = "Spiacenti la tua email non si trova tra quelle gi&agrave; registrate &excl;") ;
-    }  
 }
-
+if (mail == true) {
+    //istruzioniblocco1
+    document.getElementById("ricerca").innerHTML = "Complimenti la tua email si trova tra quelle gi&agrave; registrate &excl;";
+} else {
+    document.getElementById("ricerca").innerHTML = "La tua email non si trova tra quelle gi&agrave; registrate &excl;";
+}
+/* if (userLogged == true) */
