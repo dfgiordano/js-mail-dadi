@@ -13,6 +13,7 @@ console.log(emailRegistrate);
 // console.log(check);
 for (var i = 0; i < emailRegistrate.length; i++) {    
     if (mail == emailRegistrate[i]) {
+        mail=true;
     }
 }
 if (mail == true) {
